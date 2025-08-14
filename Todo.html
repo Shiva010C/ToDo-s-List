@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO's List</title>
+    <link rel="stylesheet" href="ToDo.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>TO-DOs List</h2>
+
+        <div class="form-group">
+
+            <div class="addinsec">
+                <input type="text" class="input-area" id="title" aria-describedby="aria-describe"
+                    placeholder="new to-do...">
+                <button id="addbtn" class="btn">Add</button>
+            </div>
+
+            <small id="aria-describe">Add an item to the list</small>
+            <button id="clearList" class="btn" onclick="clearList()">Clear List</button>
+        </div>
+        
+
+
+    </div>
+
+    <div id="items" class="table-area">
+        <h2 id="item-area-title">Your Items</h2>
+        <table>
+            <tbody id="titleBody">
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" id="opt-1">
+                        <label for="opt-1"></label>
+                    </th>
+                    <td>
+                        <span class="table-item">Get some coffee</span>
+                        <span class="table-btn"><button class="btn">delete</button></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Todo.js"></script>
+</body>
+
+</html>

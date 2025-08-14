@@ -1,0 +1,247 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppons", sans-serif;
+}
+
+body {
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background: seashell;
+}
+
+.btn {
+    border: 1px solid rgb(197, 74, 16);
+    /* border-radius: 3px;
+    padding: 3px 10px; */
+    color: rgb(197, 74, 16);
+    font-size: 0.89rem;
+    font-weight: 600;
+
+}
+
+.btn:hover {
+    color: rgb(115, 37, 1);
+    background: rgb(252, 213, 195);
+
+}
+
+
+.container {
+    justify-self: center;
+    justify-items: center;
+    /* width: 45vw; */
+    position: relative;
+}
+
+h2 {
+    color: rgb(186, 59, 0);
+    /* justify-self: center; */
+    margin: 32px 0px 30px 0px;
+    white-space: nowrap;
+
+}
+
+.addinsec {
+    display: flex;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.input-area {
+    width: 44vw;
+    resize: none;
+    padding: 4px 50px 4px 5px;
+    border: 1px solid rgb(197, 74, 16);
+    border-radius: 12px;
+    color: rgb(197, 74, 16);
+}
+
+small {
+    color: rgb(186, 59, 0);
+    display: block;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+}
+
+#addbtn {
+    padding: 3.9px 10px;
+    position: absolute;
+    right: 0px;
+    border-radius: 15px;
+}
+
+#clearList {
+    padding: 4px 10px;
+    /* display: inline-block; */
+    /* justify-self: left; */
+    position: absolute;
+    right: 0px;
+    border-radius: 15px;
+}
+
+.buttonsec {
+    display: block;
+    justify-self: left;
+}
+
+.table-area {
+    width: 47.5vw;
+    color: rgb(186, 59, 0);
+    justify-items: center;
+    justify-self: center;
+
+}
+
+#item-area-title {
+    justify-self: left;
+    margin-bottom: 10px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* hide default checkbox */
+.table-area input[type="checkbox"] {
+    display: none;
+}
+
+/* Lable inside table cell */
+.table-area label {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+
+/* Inner filled circle when checked */
+.table-area input[type="checkbox"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(186, 59, 0);
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+td {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-item {
+    padding: 2px;
+    padding-right: 5px;
+}
+
+.table-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+@media (width < 500px) {
+
+    .container {
+        width: 60vw;
+
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .input-area {
+        width: auto;
+        resize: none;
+        padding: 3px 30px 3px 3px;
+        border: 1px solid rgb(197, 74, 16);
+        border-radius: 12px;
+        color: rgb(197, 74, 16);
+    }
+
+    .btn {
+        padding: 3px 6px;
+        font-size: 13px;
+    }
+
+    #addbtn {
+        padding: 2.5px 6px;
+        font-size: 14px;
+        right: -10px;
+    }
+
+    small {
+        font-size: 11px;
+        padding: 0px 4px;
+
+    }
+
+    #clearList {
+        padding: 3px 6px;
+        font-size: 13px;
+        right: -10px;
+    }
+
+    #item-area-title {
+        font-size: larger;
+    }
+
+    .table-area {
+        width: 65vw;
+    }
+
+    .table-item {
+        font-size: 14px;
+
+    }
+
+}
+
+@media (width < 1200px) {
+    .table-area {
+        width: 48vw;
+    }
+}
+@media (width < 1000px) {
+    .table-area {
+        width: 49.5vw;
+    }
+}
+@media (width < 800px) {
+    .table-area {
+        width: 50.5vw;
+    }
+}
+@media (width < 600px) {
+    .table-area {
+        width: 52.5vw;
+    }
+}
